@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 @Injectable({
   providedIn: 'root',
 })
 export class Product {
   // private api='http://localhost:3000/api/products';
-  private api='https://ecommerce-backend-3-lxnm.onrender.com/api/products';
+  private api=environment.apiUrl+'/api/products';
   constructor(private http:HttpClient){
 
   }
