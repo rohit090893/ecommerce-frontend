@@ -1,0 +1,11 @@
+<p>admin-orders works!</p>
+<div *ngFor="let o of orders" style="border:1px solid red ; margin:10px;padding:10px">
+  <p><b> User ID : {{o.userId}}</b></p>
+  <p><b>Total: {{o.totalAmount}} </b> </p>
+  <p><b>Status:{{o.paymentStatus}} </b> </p>
+  <ul>
+    <li *ngFor="let p of o.products">
+      {{p.productName}} - {{p.price}}
+    </li>
+  </ul>
+</div>

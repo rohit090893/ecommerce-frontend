@@ -1,0 +1,7 @@
+<p>product-list works!</p>
+<div *ngFor="let p of products" style="border:1px solid #ccc; margin:10px;padding:10px;">
+  <img [src]="'http://localhost:3000/uploads/'+p.image" width="120">
+  <h4>{{p.name}} </h4>
+  <p>{{p.price}} </p>
+  <button (click)="delete(p._id)">Delete</button>
+</div>

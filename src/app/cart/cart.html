@@ -1,0 +1,17 @@
+<p>cart works!</p>
+<h2>Your Cart</h2>
+<div *ngIf="cart.length===0">
+  <p>Cart is empty </p>
+</div>
+<div *ngFor="let item of cart; let i=index"
+      style="border-bottom: 1px soild #ddd; padding:10px;">
+    <h4>{{item.productName}} </h4>
+    <p>{{item.price}} </p>
+
+    <button (click)="remove(i)">Remove</button>
+</div>
+<hr>
+<h3>Total: {{total}} </h3>
+<button routerLink="/checkout" [disabled]="cart.length===0">
+  Proceed to Checkout
+</button>

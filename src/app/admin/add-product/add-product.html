@@ -1,0 +1,12 @@
+<h3>add-product works!</h3>
+<p style="color:green">{{message}} </p>
+<input placeholder="Product name" [(ngModel)]="name" >
+<br>
+<input type="number" placeholder="Price" [(ngModel)]="price">
+<br>
+<textarea placeholder="Description" [(ngModel)]="description"></textarea>
+<br><br>
+<input type="file" (change)="onFileChange($event)">
+<br><br>
+<button (click)="addProduct()" > Add Product </button>
+

@@ -1,0 +1,12 @@
+<p>product-list works!</p>
+<div *ngFor="let p of products" style="border:1px solid #ccc; margin:10px;
+      padding:10px">
+  <img [src]="'http://localhost:3000/uploads/'+p.image" width="150">
+  <h3>{{p.name}} </h3>
+  <p>{{p.description}} </p>
+  <p><b>{{p.price}} </b> </p>
+  <button (click)="addToCart(p)">Add to cart </button>
+
+</div>
+
+

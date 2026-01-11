@@ -1,0 +1,11 @@
+<p>my-orders works!</p>
+<div *ngFor="let o of orders" style="border:1px solid #ccc; padding:10px;margin:10px">
+  <p><b>Total: {{o.totalAmount}}</b></p>
+  <p><b>Status: {{o.paymentStatus}}</b></p>
+  <h4>Products</h4>
+  <ul>
+    <li *ngFor="let p of o.roducts">
+      {{p.name}} - {{p.price}}
+    </li>
+  </ul>
+</div>

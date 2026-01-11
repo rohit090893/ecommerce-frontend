@@ -1,0 +1,9 @@
+<p>checkout works!</p>
+<h2>Checkout </h2>
+<div *ngFor="let item of cart">
+  <p>{{item.producName}}-{{item.price}} </p>
+</div>
+
+<h3>Total:{{total}} </h3>
+<button (click)="pay()">Pay with razorpay</button>
+
