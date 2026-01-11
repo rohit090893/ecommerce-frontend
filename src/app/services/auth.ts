@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class Auth {
   // private api='http://localhost:3000/api/auth';
-  private api='https://ecommerce-backend-2-olgq.onrender.com/api/auth';
+  private api='https://ecommerce-backend-3-lxnm.onrender.com/api/auth';
   constructor(private http:HttpClient){
 
   }

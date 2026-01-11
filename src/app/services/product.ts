@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class Product {
   // private api='http://localhost:3000/api/products';
-  private api='https://ecommerce-backend-2-olgq.onrender.com/api/products';
+  private api='https://ecommerce-backend-3-lxnm.onrender.com/api/products';
   constructor(private http:HttpClient){
 
   }
