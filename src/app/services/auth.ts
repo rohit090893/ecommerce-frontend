@@ -7,7 +7,7 @@ import { environment } from '../../environments/environment';
 })
 export class Auth {
   // private api='http://localhost:3000/api/auth';
-  private api= environment.apiUrl+'api/auth';
+  private api= environment.apiUrl+'/api/auth';
   constructor(private http:HttpClient){
 
   }
